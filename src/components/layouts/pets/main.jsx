@@ -22,7 +22,7 @@ class Pets extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>MultiKart | Pets Store</title>
+                    <title>Zumar | Pets Store</title>
                 </Helmet>
                 <HeaderThree logoName={'logo/14.png'} />
                 <section className="p-0 small-slider">

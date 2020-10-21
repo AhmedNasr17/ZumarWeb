@@ -296,7 +296,7 @@ class Landing extends Component {
                                         </ul>
                                         <h6>auto height adjustable</h6>
                                     </div>
-                                    <p className="para">Every store has different image size weather its tools or fashion we have covered all image size for all your store needs , it has auto resize image option in multikart</p>
+                                    <p className="para">Every store has different image size weather its tools or fashion we have covered all image size for all your store needs , it has auto resize image option in zumar</p>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-md-6">
@@ -1017,7 +1017,7 @@ class Landing extends Component {
                                             <li><i className="fa fa-star" aria-hidden="true"></i></li>
                                             <li><i className="fa fa-star" aria-hidden="true"></i></li>
                                         </ul>
-                                        <h2>purchase the multikart <br />
+                                        <h2>purchase the zumar <br />
                                             & create beautiful online store</h2>
                                         <a target="_blank"
                                             href="https://themeforest.net/item/multikart-responsive-react-ecommerce-template/23067773?s_rank=3"

@@ -21,7 +21,7 @@ class cartComponent extends Component {
             <div>
                 {/*SEO Support*/}
                 <Helmet>
-                    <title>MultiKart | Cart List Page</title>
+                    <title>Zumar | Cart List Page</title>
                     <meta name="description" content="Zumar – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Zumar Bootstrap 4 Template will help you run multiple businesses." />
                 </Helmet>
                 {/*SEO Support End */}

@@ -22,7 +22,7 @@ class Furniture extends Component {
             <div>
                 <HeaderTwo logoName={'logo/1.png'} />
                 <Helmet>
-                    <title>MultiKart | Furniture Store</title>
+                    <title>Zumar | Furniture Store</title>
                     <meta name="description" content="Zumar – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Zumar Bootstrap 4 Template will help you run multiple businesses." />
                 </Helmet>
                 <section className="p-0 small-slider">
