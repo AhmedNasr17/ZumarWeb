@@ -28,7 +28,7 @@ class CollectionLeftSidebar extends Component {
             <div>
                 {/*SEO Support*/}
                 <Helmet>
-                    <title>MultiKart | Collection of Products</title>
+                    <title>Zumar | Collection of Products</title>
                     <meta name="description" content="Zumar – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Zumar Bootstrap 4 Template will help you run multiple businesses." />
                 </Helmet>
                 {/*SEO Support End */}

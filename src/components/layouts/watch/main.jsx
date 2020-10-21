@@ -31,7 +31,7 @@ class Watch extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>MultiKart | Watch Store</title>
+                    <title>Zumar | Watch Store</title>
                 </Helmet>
                 <HeaderFive logoName={'layout4/logo.png'} />
                 <section className="p-0 small-slider">

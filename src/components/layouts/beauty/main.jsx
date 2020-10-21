@@ -45,7 +45,7 @@ class Beauty extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>MultiKart | Beauty Store</title>
+                    <title>Zumar | Beauty Store</title>
                 </Helmet>
                 <HeaderOne logoName={'layout3/logo.png'}/>
                 <section className="p-0">

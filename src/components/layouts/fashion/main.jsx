@@ -27,7 +27,7 @@ class Fashion extends Component {
 		return (
 			<div>
                 <Helmet>
-                    <title>MultiKart | Fashion Store</title>
+                    <title>Zumar | Fashion Store</title>
                     <meta name="description" content="Zumar – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Zumar Bootstrap 4 Template will help you run multiple businesses." />
                 </Helmet>
                 {/*Home Slider*/}
