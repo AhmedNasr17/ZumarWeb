@@ -1,10 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name:Zumar
-    Template URI: themes.pixelstrap.com/multikart
-    Description: This is E-commerce website
-    Author: Pixelstrap
-    Author URI: https://themeforest.net/user/pixelstrap
+    ZUMAR
 
 ----------------------------------------------------------------------------------- */
 /* 1. General CSS
@@ -48,7 +44,7 @@
     1.General CSS start
 ==========================*/
 body {
-  font-family: Lato, sans-serif;
+  font-family: Poppins, sans-serif;
   position: relative;
   background: #ffffff;
   font-size: 14px;

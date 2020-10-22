@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
     Template Name:Zumar
-    Template URI: themes.pixelstrap.com/multikart
+    Template URI: themes.pixelstrap.com/zumar
     Description: This is E-commerce website
     Author: Pixelstrap
     Author URI: https://themeforest.net/user/pixelstrap
@@ -48,7 +48,7 @@
     1.General CSS start
 ==========================*/
 body {
-  font-family: Lato, sans-serif;
+  font-family: Poppins, sans-serif;
   position: relative;
   background: #ffffff;
   font-size: 14px;
@@ -60,7 +60,7 @@ h1 {
   font-size: 60px;
   color: #222222;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 h1 span {
   font-size: 107px;
@@ -71,40 +71,45 @@ h1 span {
 h2 {
   font-size: 36px;
   color: #222222;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.02em;
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #777777;
-  letter-spacing: 0.03em;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  color: #1E2432;
+  line-height: 56px;
+  letter-spacing: -0.1px;
 }
 
 h4 {
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.15px;
+  color: #1E2432;
 }
 
 h5 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #222222;
-  line-height: 24px;
-  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1E2432;
 }
 
 h6 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #777777;
-  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: #1E2432;
 }
 
 ul {
@@ -118,8 +123,11 @@ li {
 
 p {
   font-size: 14px;
-  color: #777777;
+  color: #1E2432;
   line-height: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 a {
@@ -1752,7 +1760,7 @@ r
   overflow: hidden;
 }
 .classic-effect:before, .classic-effect:after {
-  background: #cc2121;
+  background: #121028;
   width: 25%;
   position: absolute;
   content: '';
@@ -1774,7 +1782,7 @@ r
           transition-delay: 0.025s;
 }
 .classic-effect span:before, .classic-effect span:after {
-  background: #cc2121;
+  background: #121028;
   width: 25%;
   position: absolute;
   content: '';
@@ -1896,6 +1904,7 @@ r
 }
 
 .service-block1 {
+  display: flex;
   text-align: center;
 }
 .service-block1 svg {

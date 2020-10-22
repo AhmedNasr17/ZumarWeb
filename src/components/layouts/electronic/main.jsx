@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import '../../common/index.scss';
 import Slider from 'react-slick';
-
+import BlogSection from "../common/blogsection"
 // Import custom components
 import HeaderFour from "../../common/headers/header-four"
 import SpecialProducts from "./special-products"
 import FooterOne from "../../common/footers/footer-one";
-import ThemeSettings from "../../common/theme-settings"
 
 class Electronic extends Component {
 
     componentDidMount() {
-        document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color7.css` );
+        document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color7.css`);
     }
 
-    render(){
+    render() {
 
         return (
             <div className="container-fluid layout-8">
@@ -34,7 +33,8 @@ class Electronic extends Component {
                                                 <div>
                                                     <h4>save 30%</h4>
                                                     <h1>electronic</h1>
-                                                    <a href="#" className="btn btn-outline btn-classic">shop now</a></div>
+                                                    <a href="#" className="btn btn-outline btn-classic">shop now</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -60,73 +60,222 @@ class Electronic extends Component {
                     </Slider>
                 </section>
 
-                <div className="layout-8-bg">
-                    {/*About Section*/}
-                    <section className="banner-goggles ratio2_3">
-                        <div className="container-fluid">
-                            <div className="row partition3">
-                                <div className="col-md-4">
-                                    <a href="#">
-                                        <div className="collection-banner">
-                                            <div className="img-part">
-                                                <img src={`${process.env.PUBLIC_URL}/assets/images/electronics/sub1.jpg`}
-                                                     className="img-fluid blur-up lazyload bg-img" alt="" />
-                                            </div>
-                                            <div className="contain-banner banner-3">
-                                                <div>
-                                                    <h4>10% off</h4>
-                                                    <h2>speaker</h2>
-                                                </div>
-                                            </div>
+                <section className="">
+                    <h4>Discover Zumar</h4>
+                    <p className="pt-2">Whether you’ve already got an established ecommerce business, a great idea for a new product, or you just have a passion for selling, here’s how to take that next step with Zumar.</p>
+                    <div className="productContainer">
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p1.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p2.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p3.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p4.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p5.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p6.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p1.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p2.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p3.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p4.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p5.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p6.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p1.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p2.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p3.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p4.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p5.svg`} alt="" />
+                        </div>
+
+                        <div className="product">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/p6.svg`} alt="" />
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section className="container-fluid">
+                    <div className="row">
+                        <div className="col-8">
+                            <a href="#">
+                                <div class="collection-banner p-left text-center">
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/apple.svg`} class="img-fluid" alt="" />
+                                    <div class="contain-banner">
+                                        <div>
+                                            <h3>Apple</h3>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                                <div className="col-md-4">
-                                    <a href="#">
-                                        <div className="collection-banner">
-                                            <div className="img-part">
-                                                <img src={`${process.env.PUBLIC_URL}/assets/images/electronics/sub2.jpg`}
-                                                     className="img-fluid blur-up lazyload bg-img" alt="" />
-                                            </div>
-                                            <div className="contain-banner banner-3">
-                                                <div>
-                                                    <h4>10% off</h4>
-                                                    <h2>earplug</h2>
-                                                </div>
-                                            </div>
+                            </a>
+                        </div>
+                        <div className="col-4">
+                            <a href="/left-sidebar/collection">
+                                <div class="collection-banner p-left text-center">
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/soney.svg`} class="img-fluid" alt="" />
+                                    <div class="contain-banner">
+                                        <div>
+                                            <h3>Soney</h3>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                                <div className="col-md-4">
-                                    <a href="#">
-                                        <div className="collection-banner">
-                                            <div className="img-part">
-                                                <img src={`${process.env.PUBLIC_URL}/assets/images/electronics/sub3.jpg`}
-                                                     className="img-fluid blur-up lazyload bg-img" alt="" />
-                                            </div>
-                                            <div className="contain-banner banner-3">
-                                                <div>
-                                                    <h4>50% off</h4>
-                                                    <h2>best deal</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="why_zumar">
+                    <h4>Why Zumar</h4>
+                    <p className="pt-2">Whether you’ve already got an established ecommerce business, a great idea for a new product, or you just have a passion for selling, here’s how to take that next step with Zumar.</p>
+
+
+                    <div class="row partition3 pt-4 pb-4">
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/globe.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
                             </div>
                         </div>
-                    </section>
-                    {/*About Section End*/}
 
-                    {/*Product slider*/}
-                    <SpecialProducts type={'electronics'} />
-                    {/*Product slider End*/}
-                </div>
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/shield_user.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/briefcase.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row partition3 banner-top-cls">
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/target.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/flag.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 service-block1">
+                            <div className="why_img_container">
+                                <img src={`${process.env.PUBLIC_URL}/assets/images/img/graph.png`} className="img-fluid" alt="" />
+                            </div>
+                            <div className="why_caption_container ml-4">
+                                <h6>Global B2B Business</h6>
+                                <p>Whether you’ve already got an established ecommerce business, a great idea</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                {/*deals wrapper*/}
+                <section className="deals">
+                    <div className="pb-3">
+                        <h4>Best deals</h4>
+                    </div>
+
+                    {/* Slider Section*/}
+                    <div className="row">
+                        <div className="col-md-12">
+                            <BlogSection />
+                        </div>
+                    </div>
+                    {/* Slider End*/}
+                </section>
+
+                <section className="sellers mt-5">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-8 pt-3 pl-5">
+                            <h4>Check out best seller from your country</h4>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button className="btn">View Details</button>
+                        </div>
+                        <span></span>
+                        <div className="seller col-3 float-right">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/seller.svg`} alt="" />
+                        </div>
+                    </div>
+                    
+
+                </section>
+
+
                 <div className="footer-white">
                     <FooterOne logoName={'logo/3.png'} />
                 </div>
-
-                <ThemeSettings />
             </div>
         )
     }
