@@ -16,7 +16,7 @@ import {
 import TopCollection from "../common/collection"
 import NewProduct from "../../common/new-product"
 import Instagram from "../common/instagram"
-import HeaderOne from "../../common/headers/header-one"
+import Loader from "../../common/headers/loader"
 import FooterOne from "../../common/footers/footer-one"
 import BlogSection from "../common/blogsection";
 
@@ -47,7 +47,7 @@ class Beauty extends Component {
                 <Helmet>
                     <title>Zumar | Beauty Store</title>
                 </Helmet>
-                <HeaderOne logoName={'layout3/logo.png'}/>
+                <Loader logoName={'layout3/logo.png'}/>
                 <section className="p-0">
                     <Slider className="slide-1 home-slider">
                         <div>

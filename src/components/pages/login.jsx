@@ -1,57 +1,60 @@
-import React, {Component} from 'react';
-
-import Breadcrumb from "../common/breadcrumb";
+import React, { Component } from 'react';
 
 class Login extends Component {
 
-    constructor (props) {
-        super (props)
+    constructor(props) {
+        super(props)
 
     }
 
-    render (){
+    render() {
 
 
         return (
-            <div>
-                <Breadcrumb title={'Login'}/>
-                
-                
-                {/*Login section*/}
-                <section className="login-page section-b-space">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <h3>Login</h3>
-                                <div className="theme-card">
-                                    <form className="theme-form">
-                                        <div className="form-group">
-                                            <label htmlFor="email">Email</label>
-                                            <input type="text" className="form-control" id="email" placeholder="Email"
-                                                   required="" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="review">Password</label>
-                                            <input type="password" className="form-control" id="review"
-                                                   placeholder="Enter your password" required="" />
-                                        </div>
-                                        <a href="#" className="btn btn-solid">Login</a>
-                                    </form>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 right-login">
-                                <h3>New Customer</h3>
-                                <div className="theme-card authentication-right">
-                                    <h6 className="title-font">Create A Account</h6>
-                                    <p>Sign up for a free account at our store. Registration is quick and easy. It
-                                        allows you to be able to order from our shop. To start shopping click
-                                        register.</p>
-                                    <a href="#" className="btn btn-solid">Create an Account</a>
-                                </div>
-                            </div>
-                        </div>
+            <div className="login">
+                <div className="login__hero">
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="login__hero--img" />
+                </div>
+
+                <div className="login__form mt-5">
+
+                    <div className="login__form--header">
+                        <h2 className="pr-2">Sign up to</h2>
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/img/logo_pro.svg`} alt="" />
                     </div>
-                </section>
+
+                    <form action="#" className="form mt-5 mb-5">
+                        <div className="form__group mb-5">
+                            <input type="email" className="form__input" placeholder="Email" id="email" required />                        
+                            <label for="emails" className="form__label">Email</label>
+                        </div>
+
+                        <div className="form__group mb-5">
+                            <input type="password" className="form__input" placeholder="Password" id="password" required />
+                            <label for="password" className="form__label">Password</label>
+                        </div>
+
+                        <div className="form__group">
+                            <label for="check" className="form__checkbox">
+                                <input type="checkbox" className="form__input--checkbox" name="" id="check" />
+                                <label className="pl-5" for="check">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</label>
+                            </label> 
+                        </div>
+
+                        <button type="submit" className="btn">Sign in</button>
+                    </form>
+
+                    <label className="mt-2">Or connect using a social account.</label>
+                    
+                    <div className="social mt-2">
+                        <a href="#" className="btn social__facebook">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/facebook.svg`} alt="Facebook"/>
+                        </a>
+                        <a href="#" className="btn social__google">
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/img/google.svg`} alt="Google"/>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         )

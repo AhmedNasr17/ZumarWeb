@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import BlogSection from "../common/blogsection"
 // Import custom components
 import HeaderFour from "../../common/headers/header-four"
-import SpecialProducts from "./special-products"
+import Card from "../../../components/common/Card";
 import FooterOne from "../../common/footers/footer-one";
 
 class Electronic extends Component {
@@ -257,19 +257,43 @@ class Electronic extends Component {
                 </section>
 
                 <section className="sellers mt-5">
-                    <div className="row">
-                        <div className="col-sm-12 col-md-8 pt-3 pl-5">
-                            <h4>Check out best seller from your country</h4>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                            <button className="btn">View Details</button>
-                        </div>
-                        <span></span>
-                        <div className="seller col-3 float-right">
-                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/seller.svg`} alt="" />
+                    <div className="sellers__content">
+                        <h4>Check out best seller from your country</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button className="btn">View Details</button>
+                    </div>
+                    <div className="sellers__hero">
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/img/seller.svg`} alt="
+                        seller" className="sellers__img" />
+                    </div>
+                </section>
+
+                <section className="offer mt-5">
+                    <h4>Flash sell offer for you</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+                    <div className="container-fluid lookbook-section lookbook">
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="row lookbook-img">
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp1.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="text-white" />
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp2.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="" />
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="row lookbook-img">
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp1.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="text-white" />
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp1.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="" />
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="row lookbook-img">
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp3.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="" />
+                                    <Card class="col-12" image={`${process.env.PUBLIC_URL}/assets/images/img/pp4.svg`} link="#" title="Sports watch" price="$ 100.00" textClass="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-
                 </section>
 
 

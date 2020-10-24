@@ -7,7 +7,7 @@ import ThemeSettings from "../../common/theme-settings";
 
 // Import custom components
 import TopCollection from "../common/collection"
-import HeaderOne from "../../common/headers/header-one"
+import Loader from "../../common/headers/loader"
 import FooterOne from "../../common/footers/footer-one"
 import Instagram from "../common/instagram"
 import LogoBlock from "../common/logo-block"
@@ -25,7 +25,7 @@ class Kids extends Component {
                 <Helmet>
                     <title>Zumar | Kids Store</title>
                 </Helmet>
-                <HeaderOne logoName={'logo/6.png'}/>
+                <Loader logoName={'logo/6.png'}/>
 
                 <section className="p-0">
                     <Slider className="slide-1 home-slider">

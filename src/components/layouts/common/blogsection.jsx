@@ -12,7 +12,7 @@ class BlogSection extends Component {
             <div className="row">
                 <div className="col-md-12">
                     <Slider {...Slider3} className="slide-3 no-arrow ">
-                        <div className="deals_container">
+                        <div className="card_container">
                             <div className="col-md-12 ">
                                 <Link to={`${process.env.PUBLIC_URL}/blog/details`} >
                                     <div>
