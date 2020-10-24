@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import Breadcrumb from "../common/breadcrumb";
-
 class Register extends Component {
 
     constructor (props) {
@@ -13,19 +11,34 @@ class Register extends Component {
 
 
         return (
-            <div className="login">
-                <div className="login__hero">
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="login__hero--img" />
+            <div className="auth">
+                <div className="lauth__hero">
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="auth__hero--img" />
                 </div>
 
-                <div className="login__form mt-5">
+                <div className="auth__form mt-5">
 
-                    <div className="login__form--header">
+                    
+                    <div className="lauth__form--header">
                         <h2 className="pr-2">Sign up to</h2>
                         <img src={`${process.env.PUBLIC_URL}/assets/images/img/logo_pro.svg`} alt="" />
                     </div>
 
                     <form action="#" className="form mt-5 mb-5">
+                        <div className="row">
+                            <div className="col-6">
+                                <div className="form__group mb-5">
+                                    <input type="text" className="form__input" placeholder="First name" id="firstName" required />                        
+                                    <label for="firstName" className="form__label">First name</label>
+                                </div>        
+                            </div>
+                            <div className="col-6">
+                                <div className="form__group mb-5">
+                                    <input type="text" className="form__input" placeholder="First name" id="firstName" required />                        
+                                    <label for="firstName" className="form__label">First name</label>
+                                </div>
+                            </div>
+                        </div>
                         <div className="form__group mb-5">
                             <input type="email" className="form__input" placeholder="Email" id="email" required />                        
                             <label for="emails" className="form__label">Email</label>
@@ -59,7 +72,7 @@ class Register extends Component {
                 </div>
 
             </div>
-        )
+        ) 
     }
 }
 

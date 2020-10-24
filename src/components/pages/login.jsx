@@ -11,15 +11,15 @@ class Login extends Component {
 
 
         return (
-            <div className="login">
-                <div className="login__hero">
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="login__hero--img" />
+            <div className="auth">
+                <div className="lauth__hero">
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="auth__hero--img" />
                 </div>
 
-                <div className="login__form mt-5">
+                <div className="auth__form mt-5">
 
-                    <div className="login__form--header">
-                        <h2 className="pr-2">Sign up to</h2>
+                    <div className="lauth__form--header">
+                        <h2 className="pr-2">Sign in to</h2>
                         <img src={`${process.env.PUBLIC_URL}/assets/images/img/logo_pro.svg`} alt="" />
                     </div>
 

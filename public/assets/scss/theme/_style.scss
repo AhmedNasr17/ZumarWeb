@@ -17134,27 +17134,27 @@ section.why_zumar {
 
 // Auth Section
 
-.login {
+.auth {
   display: flex;
   height: 100vh;
 
-  .login__hero {
+  .auth__hero {
     flex: 0 1 40%;
 
-    .login__hero--img {
+    .auth__hero--img {
       width: 100%;
       display: block;
     }
   }
 
-  .login__form {
+  .auth__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10rem;
     width: 100%;
 
-    .login__form--header {
+    .auth__form--header {
       display: flex;
       align-items: baseline;
       
