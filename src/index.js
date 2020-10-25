@@ -52,11 +52,15 @@ import checkOut from './components/checkout'
 import orderSuccess from './components/checkout/success-page'
 
 // Extra Pages
+
+import Login from './components/pages/login'
+import Register from './components/pages/register'
+import IndividualInformation from './components/pages/Register/individual-information';
+import Done from './components/pages/Register/done';
+
 import aboutUs from './components/pages/about-us'
 import PageNotFound from './components/pages/404'
 import lookbook from './components/pages/lookbook'
-import Login from './components/pages/login'
-import Register from './components/pages/register'
 import Search from './components/pages/search'
 import Collection from './components/pages/collection'
 import ForgetPassword from './components/pages/forget-password'
@@ -87,6 +91,7 @@ import ElementProductTab from "./components/features/product/element-product-tab
 // Portfolio Features
 import GridCols from "./components/features/portfolio/grid-cols"
 import MasonaryGridCols from "./components/features/portfolio/masonary-grid-cols"
+
 
 
 class Root extends React.Component {
@@ -154,6 +159,9 @@ class Root extends React.Component {
                                 <Route path={`${process.env.PUBLIC_URL}/pages/contact`} component={Contact}/>
                                 <Route path={`${process.env.PUBLIC_URL}/pages/dashboard`} component={Dashboard}/>
                                 <Route path={`${process.env.PUBLIC_URL}/pages/faq`} component={Faq}/>
+
+                                <Route path={`${process.env.PUBLIC_URL}/pages/auth/individual-information`} component={IndividualInformation} />
+                                <Route path={`${process.env.PUBLIC_URL}/pages/auth/Done`} component={Done} />
 
 								{/*Features*/}
 								{/*Theme Elements*/}

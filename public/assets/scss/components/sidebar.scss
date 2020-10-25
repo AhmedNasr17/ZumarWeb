@@ -1,0 +1,58 @@
+.sidebar {
+
+    background-color: $right-sidebar;
+
+    ul {
+        display: flex;
+        flex-direction: row-reverse;
+
+        padding: 5%;
+
+        li {
+            display: inherit;
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 27px;
+                color: $white;
+            }
+        }
+    }
+
+    &__header {
+        ul {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20%;
+
+        h4 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: -0.15px;
+            color: $white;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+
+            li {
+                margin: 0;
+                padding: 0;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}

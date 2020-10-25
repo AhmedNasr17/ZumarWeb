@@ -617,6 +617,13 @@ class Landing extends Component {
                                             <h3>register</h3>
                                         </div>
                                         <div className="col-xl-3 col-sm-6 col-12 demo-box">
+                                            <Link to={`${process.env.PUBLIC_URL}/pages/auth/individual-information`} target="_blank">
+                                                <img src={`${process.env.PUBLIC_URL}/assets/images/landing-page/special features/other/5.jpg`}
+                                                    className="img-fluid lazyload" />
+                                            </Link>
+                                            <h3>register</h3>
+                                        </div>
+                                        <div className="col-xl-3 col-sm-6 col-12 demo-box">
                                             <Link to={`${process.env.PUBLIC_URL}/pages/contact`} target="_blank">
                                                 <img src={`${process.env.PUBLIC_URL}/assets/images/landing-page/special features/other/6.jpg`}
                                                     className="img-fluid lazyload" />
