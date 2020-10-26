@@ -3,10 +3,10 @@ import React from 'react';
 const Statusbar = props => {
     return (
         <ul className={props.className}>
-            <li className="active">Business and Contacy address</li>
-            <li className="active">Mobile or Telephone number </li>
-            <li className="active">Payment</li>
-            <li className="active">Identity details</li>
+            <li className="active">Individual Information</li>
+            <li className="active">Billing </li>
+            <li className="active">Store</li>
+            <li className="active">Done</li>
         </ul>
     );
 };

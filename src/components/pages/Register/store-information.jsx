@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+// Component
+import Sidebar from '../../../components/Auth/sidebar';
+import Statusbar from '../../../components/Auth/status-bar';
+
 class StoreInformation extends Component {
 
     constructor (props) {
@@ -9,68 +13,78 @@ class StoreInformation extends Component {
 
     render (){
 
+        const style = {
+            height: '100vh'
+        };
 
         return (
-            <div className="auth">
-                <div className="lauth__hero">
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/img/auth_background.svg`} alt="" className="auth__hero--img" />
-                </div>
+            <div className="auth" style={style}>
+                <div className="container">
+                    <div className="row ml-5">
+                        <div className="col-12 mt-5">
+                            <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/img/logo_pro.svg`} alt="Logo" /></a>
+                        </div>
 
-                <div className="auth__form mt-5">
+                        <div className="billing col-12">
+                            <Statusbar className="progressbar mt-5" />
 
-                    
-                    <div className="lauth__form--header">
-                        <h2 className="pr-2">Sign up to</h2>
-                        <img src={`${process.env.PUBLIC_URL}/assets/images/img/logo_pro.svg`} alt="" />
-                    </div> 
-
-                    <form action="#" className="form mt-5 mb-5">
-                        <div className="row">
-                            <div className="col-6">
-                                <div className="form__group mb-5">
-                                    <input type="text" className="form__input" placeholder="First name" id="firstName" required />                        
-                                    <label for="firstName" className="form__label">First name</label>
-                                </div>        
-                            </div>
-                            <div className="col-6">
-                                <div className="form__group mb-5">
-                                    <input type="text" className="form__input" placeholder="First name" id="firstName" required />                        
-                                    <label for="firstName" className="form__label">First name</label>
+                            <div className="row">
+                                <div className="col-12 header__title">
+                                    <h6 className="title">Billing Information</h6>
+                                    <p>We are not going to charge anything</p>
                                 </div>
+
+                                <div className="col-12">
+                                    <form action="#" className="form mt-5">
+                                        <div className="row">
+                                            <div className="col-5">
+                                                <div className="form__group">
+                                                    <input type="text" className="form__input" placeholder="Card holder's name" id="cardHolderName" required />
+                                                    <label for="cardHolderName" className="form__label">Card holder's name</label>
+                                                </div>
+                                            </div>
+                                            <div className="col-5">
+                                                <div className="form__group">
+                                                    <input type="text" className="form__input" placeholder="Card number" id="cardNumber" required />
+                                                    <label for="cardNumber" className="form__label">Card number</label>
+                                                </div>
+                                            </div>
+                                            <div className="col-2">
+                                                <div className="form__group">
+                                                    <input type="text" className="form__input" placeholder="Expires on" id="expiryDate" required />
+                                                    <label for="expiryDate" className="form__label">Expires on</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="row mt-5">
+                                            <div className="col-12">
+                                                <div className="form__group">
+                                                    <input type="text" className="form__input" placeholder="Add billing address" id="address" required />
+                                                    <label for="address" className="form__label">Add billing address</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="row mt-5">
+                                            <div className="form__group">
+                                                <label for="check" className="form__checkbox">
+                                                    <input type="checkbox" className="form__input--checkbox" name="" id="check" />
+                                                    <label className="pl-5" for="check">Use Address 1 as Billing addresss <br/><span>House 11, Road 22, uttara nazim uddin ,dhaka 1212</span></label>
+                                                </label> 
+                                            </div>
+                                        </div>
+
+                                        <button className="btn">Next</button>
+                                    </form>
+                                </div>
+
                             </div>
                         </div>
-                        <div className="form__group mb-5">
-                            <input type="email" className="form__input" placeholder="Email" id="email" required />                        
-                            <label for="emails" className="form__label">Email</label>
-                        </div>
-
-                        <div className="form__group mb-5">
-                            <input type="password" className="form__input" placeholder="Password" id="password" required />
-                            <label for="password" className="form__label">Password</label>
-                        </div>
-
-                        <div className="form__group">
-                            <label for="check" className="form__checkbox">
-                                <input type="checkbox" className="form__input--checkbox" name="" id="check" />
-                                <label className="pl-5" for="check">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</label>
-                            </label> 
-                        </div>
-
-                        <button type="submit" className="btn">Sign in</button>
-                    </form>
-
-                    <label className="mt-2">Or connect using a social account.</label>
-                    
-                    <div className="social mt-2">
-                        <a href="#" className="btn social__facebook">
-                            <img src={`${process.env.PUBLIC_URL}/assets/images/img/facebook.svg`} alt="Facebook"/>
-                        </a>
-                        <a href="#" className="btn social__google">
-                        <img src={`${process.env.PUBLIC_URL}/assets/images/img/google.svg`} alt="Google"/>
-                        </a>
                     </div>
                 </div>
 
+                <Sidebar />
             </div>
         ) 
     }

@@ -56,6 +56,8 @@ import orderSuccess from './components/checkout/success-page'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
 import IndividualInformation from './components/pages/Register/individual-information';
+import BillingInformation from './components/pages/Register/billing-information';
+import StoreInformation from './components/pages/Register/store-information';
 import Done from './components/pages/Register/done';
 
 import aboutUs from './components/pages/about-us'
@@ -91,6 +93,7 @@ import ElementProductTab from "./components/features/product/element-product-tab
 // Portfolio Features
 import GridCols from "./components/features/portfolio/grid-cols"
 import MasonaryGridCols from "./components/features/portfolio/masonary-grid-cols"
+
 
 
 
@@ -161,6 +164,8 @@ class Root extends React.Component {
                                 <Route path={`${process.env.PUBLIC_URL}/pages/faq`} component={Faq}/>
 
                                 <Route path={`${process.env.PUBLIC_URL}/pages/auth/individual-information`} component={IndividualInformation} />
+                                <Route path={`${process.env.PUBLIC_URL}/pages/auth/billing`} component={BillingInformation} />
+                                <Route path={`${process.env.PUBLIC_URL}/pages/auth/store`} component={StoreInformation} />
                                 <Route path={`${process.env.PUBLIC_URL}/pages/auth/Done`} component={Done} />
 
 								{/*Features*/}
