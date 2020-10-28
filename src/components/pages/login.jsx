@@ -41,7 +41,7 @@ class Login extends Component {
                             </label> 
                         </div>
 
-                        <button type="submit" className="btn">Sign in</button>
+                        <button type="submit" className="btn dark-blue">Sign in</button>
                     </form>
 
                     <label className="mt-2">Or connect using a social account.</label>

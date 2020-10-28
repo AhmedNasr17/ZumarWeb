@@ -4,7 +4,7 @@ const Sidebar = props => {
     return (
         <div className="sidebar">
             <div className="sidebar__header">
-                <ul className="mt-5 mr-5">
+                <ul className=" mr-5">
                     <li className="pl-5">
                         <a href="#">
                             <img src={`${process.env.PUBLIC_URL}/assets/images/img/burger.svg`} alt="" className="Menu icon" />

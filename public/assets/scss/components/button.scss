@@ -1,0 +1,19 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: .7rem 5rem;
+}
+
+.dark-blue {
+    background: #0F3043;
+}
+.light-green {
+    color: $green;
+    background-color: $light-green;
+}

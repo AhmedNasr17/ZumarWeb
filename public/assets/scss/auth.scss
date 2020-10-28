@@ -251,14 +251,12 @@
     }
   }
 
-
 .individual {
   .header__title {
-    display: flex;
+    display: inherit;
     font-style: normal;
     line-height: 32px;
     color: $grey01;
-    margin-top: 5%;
 
     p.title {  
       font-weight: normal;
@@ -288,6 +286,22 @@
       font-size: 16px;
       line-height: 27px;
       color: $grey-dark;
+    }
+  }
+
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload-file {
+    :last-child {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 25px;
+      letter-spacing: -0.1px;
+      color: $grey8;
     }
   }
 }
